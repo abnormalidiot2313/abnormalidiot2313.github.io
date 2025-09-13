@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>End of Prologue</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;800&display=swap" rel="stylesheet">
+    <style>
+      a {
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      body {
+        background: linear-gradient(#0288d1 0%, #0288d1 50%, #015a8a 100%);
+        background-attachment: fixed;
+        color: #ffffff;
+        font-family: "Noto Sans", sans-serif;
+        margin: 32px auto;
+        max-width: min(90vw, 900px);
+        text-align: center;
+      }
+      h1 {
+        font-size: clamp(32px, 6vw, 64px);
+        font-weight: 900;
+        margin: 16px 0;
+      }
+      html {
+        overflow-x: hidden;
+        overflow-y: auto;
+        scrollbar-color: #014368 #0288d1;
+        scrollbar-width: thin;
+      }
+      p {
+        display: flex;
+        font-size: 1.5rem;
+        font-weight: 400;
+        gap: 24px;
+        justify-content: center;
+        margin-top: 16px;
+      }
+      .album-art {
+        border-radius: 16px;
+        box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+        height: auto;
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      alt="Album Art"
+      class="album-art"
+      src="./AlbumArt.jpeg"
+    >
+    <h1>End of Prologue</h1>
+    <p>
+      <a href="https://www.youtube.com/playlist?list=PL7XMkawYBQUwJ39u0OA9Un3-TpP-IITmb">Listen</a>
+      <a href="https://drive.google.com/file/d/1ltYHYBgmEoS5-RhSEvtCqDSDx21-Kr89/view" target="_blank">Download</a>
+    </p>
+  </body>
+</html>
