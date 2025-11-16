@@ -25,8 +25,9 @@ const openPopup = (msg, type, url = null) => {
     };
   } else {
     document.getElementById("popupYes").onclick = () => {
-      if (targetUrl) location.href = targetUrl;
+      if (targetUrl) window.open(targetUrl, '_blank');
       popup.classList.remove("active");
+      targetUrl = null;
     };
     document.getElementById("popupNo").onclick = () => {
       popup.classList.remove("active");
