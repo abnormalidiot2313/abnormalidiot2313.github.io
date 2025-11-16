@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+a {
+  color: unset;
+  margin: 0.25em;
+  text-decoration: unset;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  background: #111111;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 100;
+  overflow-x: hidden;
+  user-select: none;
+  width: 100vw;
+}
+
+body.index {
+  align-items: center;
+  background: linear-gradient(to bottom, #111111 0%, #111111 50%, #4c2215 100%);
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  height: 100vh;
+  justify-content: center;
+}
+
+body, html {
+  font-family: "Noto Sans JP", "noto Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  scrollbar-color: #222222 #111111;
+  scrollbar-width: thin;
+}
+
+.coming-soon {
+  color: #808080;
+  cursor: not-allowed;
+  text-decoration: none !important;
+}
+
+.content {
+  padding: 1em;
+  user-select: text;
+}
+
+header {
+  backdrop-filter: blur(.25rem) brightness(.125);
+  display: table;
+  font-size: 1.25em;
+  position: sticky;
+  top: 0;
+  width: calc(100% - .5em);
+}
+
+.header-left {
+  display: table-cell;
+  height: 2em;
+  padding: .25em;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.header-right {
+  display: table-cell;
+  padding: .5em;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.icon {
+  height: .75em;
+}
+
+.popup {
+  align-items: center;
+  color: transparent;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  transition: all .25s ease;
+  width: 100vw;
+}
+
+.popup.active {
+  backdrop-filter: blur(.25rem) brightness(.125);
+  color: #ffffff;
+  pointer-events: all;
+}
+
+.popup a {
+  cursor: pointer;
+  margin: 0 1em;
+  padding: 0.25em 0.5em;
+}
